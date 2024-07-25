@@ -330,8 +330,10 @@ textarea {
 
 .connexion {
   /* margin: 100px; */
+
   width: 500px;
-  margin: 0 auto;
+  margin: 150px auto 0 auto;
+  padding: 0 30px 30px 30px;
   background-color: #fff;
   color: #000;
   /* display: block; */
