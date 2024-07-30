@@ -6,9 +6,9 @@ body {
   color: #fff;
 }
 
-/* img {
+img {
   width: 100%;
-} */
+}
 
 h1 {
   font-size: 30px;
@@ -51,6 +51,10 @@ h3 {
   width: 535px;
 }
 
+.logo {
+  width: 170px;
+}
+
 .button {
   background-color: #828282;
   display: inline-block;
@@ -89,6 +93,18 @@ h3 {
 .container-services {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.logo-google {
+  width: 60px;
+}
+
+.stars {
+  width: 92px;
+}
+
+.client-avis {
+  width: 50px;
 }
 
 .accueil-animals {
@@ -155,6 +171,10 @@ h3 {
   padding: auto;
   background-color: #c89e61;
   color: #000;
+}
+
+.media {
+  width: 48px;
 }
 
 .horaires {
@@ -253,6 +273,7 @@ h3 {
 }
 
 .explanation {
+  padding-top: 50px;
   display: flex;
   gap: 50px;
   color: #000;
@@ -309,15 +330,23 @@ h2 {
 } */
 
 .container-desc-animal {
-  margin: 100px 200px;
+  /* margin: 100px 200px; */
   display: flex;
   align-items: center;
   color: #000;
+  margin-top: 50px;
+  padding: 10px;
 }
 
 .img-animal-desc {
   display: flex;
   flex-direction: row-reverse;
+  align-items: stretch;
+  width: 800px;
+}
+
+.img-main {
+  height: 100%;
 }
 
 .img-side {
