@@ -308,6 +308,28 @@ h2 {
   align-items: start;
 } */
 
+.container-desc-animal {
+  margin: 100px 200px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.img-animal-desc {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-side {
+  padding-right: 20px;
+  text-align: center;
+}
+
+.text-desc-animal {
+  display: block;
+  padding-left: 80px;
+}
+
 .contact {
   color: #000;
   margin-left: 70px;
