@@ -44,6 +44,10 @@ h3 {
   color: rgb(255, 255, 255, 70%);
 }
 
+.nav-toggle {
+  display: none;
+}
+
 .wrapper-link {
   align-items: baseline;
   display: flex;
@@ -282,7 +286,7 @@ h3 {
 }
 
 .descrpition {
-  width: 600px;
+  width: 100%;
 }
 
 /* .explanation img {
@@ -312,15 +316,19 @@ h2 {
 
 .animals {
   margin: 10px;
-  width: 240px;
+  /* width: 240px; */
   text-align: center;
   color: #000;
 }
 
 .conatainer-animals {
-  margin: 100px;
+  margin: 5%;
   justify-content: space-between;
   display: flex;
+}
+
+.wrapper-img {
+  width: 100%;
 }
 
 /* animals {
@@ -340,7 +348,6 @@ h2 {
 
 .img-animal-desc {
   display: flex;
-  flex-direction: row-reverse;
   align-items: stretch;
   width: 800px;
 }
@@ -352,6 +359,12 @@ h2 {
 .img-side {
   padding-right: 20px;
   text-align: center;
+  width: 30%;
+}
+
+.img-side img {
+  border-radius: 30px;
+  width: 80%;
 }
 
 .text-desc-animal {
@@ -413,12 +426,33 @@ input {
   .card {
     width: 100%;
   }
+  .explanation {
+    flex-direction: column;
+  }
 
   .card p {
     padding: 0 5px;
   }
   .img-restaurant {
     width: 50%;
+  }
+  .review {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .text-hover {
+    top: 28%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-toggle {
+    display: block;
+  }
+  .wrapper-link {
+    display: none;
   }
 }
 
@@ -429,5 +463,39 @@ input {
 
   .accueil-animals-reverse {
     flex-direction: column-reverse;
+  }
+
+  .text-desc-animal {
+    flex-direction: column;
+  }
+
+  .img-side {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .img-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 13px;
+  }
+  .banniere {
+    height: 500px;
+  }
+  .text-hover h1 {
+    font-size: 15px;
+  }
+  .text-hover {
+    top: 30%;
+    font-size: 13px;
+    width: initial;
+  }
+  .media {
+    width: 11%;
   }
 }
