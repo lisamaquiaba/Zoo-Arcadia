@@ -21,43 +21,49 @@
   <body>
     <header class="topbar">
       <nav class="navbar">
-        <img
-          class="logo"
-          src="img/zoo_arcadia_logo.png"
-          alt="Logo du Zoo Arcadia"
-        />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/zoo_arcadia_logo.png"
+            alt="Logo du Zoo Arcadia"
+          />
+        </a>
         <div class="wrapper-link">
           <a href="index.html">Accueil</a>
           <a href="services.html">Nos Services</a>
           <a href="habitats.html">Leurs habitats</a>
-          <a href="contact.html">Contact</a>
-          <a class="button" href="connexion.html">Connexion</a>
+          <a class="active" href="contact.html">Contact</a>
+          <div class="button"><a href="connexion.html">Connexion</a></div>
         </div>
         <span class="nav-toggle"><img src="img/list.png" alt="" /></span>
       </nav>
     </header>
-    <div class="bar">
-      <h1>Contact</h1>
-      <p>
-        Si vous voulez nous parler de votre visite ou bien nous donner des
-        points à améliorer, ’hésitez pas à nous laisser un commentaire !
-      </p>
-    </div>
-    <div class="contact">
-      <form action="" class="formulaire">
-        <div>
-          <label for="pseudo">Votre pseudo</label>
+    <main>
+      <div class="bar">
+        <h1>Contact</h1>
+        <p>
+          Vous voulez nous parler de votre visite ou bien nous donner des points
+          à améliorer? N'hésitez pas à nous laisser un commentaire !
+        </p>
+      </div>
+      <section>
+        <div class="contact">
+          <form action="" class="formulaire">
+            <div>
+              <label for="pseudo">Votre pseudo</label>
+            </div>
+            <div class="pseudoinput">
+              <input type="text" name="pseudoinput" id="pseudoinput" />
+            </div>
+            <div>
+              <label for="avis">Votre avis</label>
+            </div>
+            <div><textarea name="avisinput" id="avisinput"></textarea></div>
+          </form>
         </div>
-        <div class="pseudoinput">
-          <input type="text" name="pseudoinput" id="pseudoinput" />
-        </div>
-        <div>
-          <label for="avis">Votre avis</label>
-        </div>
-        <div><textarea name="avisinput" id="avisinput"></textarea></div>
-      </form>
-    </div>
-    <div class="footer">
+      </section>
+    </main>
+    <footer class="footer">
       <div class="horaires">
         <h2>Nos Horaires</h2>
         <p>Du Lundi au Vendredi de 10:00 à 18:00</p>
@@ -75,6 +81,6 @@
           ><img class="media" src="img/youtube.png" alt="Logo Youtube"
         /></a>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

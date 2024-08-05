@@ -21,22 +21,26 @@
   <body>
     <header class="topbar">
       <nav class="navbar">
-        <img
-          class="logo"
-          src="img/zoo_arcadia_logo.png"
-          alt="Logo du Zoo Arcadia"
-        />
+        <a href="index.html">
+          <img
+            class="logo"
+            src="img/zoo_arcadia_logo.png"
+            alt="Logo du Zoo Arcadia"
+          />
+        </a>
         <div class="wrapper-link">
           <a href="index.html">Accueil</a>
           <a href="services.html">Nos Services</a>
           <a href="habitats.html">Leurs habitats</a>
           <a href="contact.html">Contact</a>
-          <a class="button" href="connexion.html">Connexion</a>
+          <div class="button">
+            <a class="active" href="connexion.html">Connexion</a>
+          </div>
         </div>
         <span class="nav-toggle"><img src="img/list.png" alt="" /></span>
       </nav>
     </header>
-    <section>
+    <section class="container-connexion">
       <div class="connexion">
         <h1>Connexion</h1>
         <form action="" class="formulaire">
@@ -58,8 +62,8 @@
             <input type="password" name="passwordinput" id="passwordinput" />
           </div>
         </form>
+        <div><button class="button-co">Se connecter</button></div>
       </div>
-      <div><a class="button-co" href="connexion.html">Se connecter</a></div>
     </section>
     <div class="footer">
       <div class="horaires">

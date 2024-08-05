@@ -1,3 +1,7 @@
+html {
+  background-color: #c89e61;
+}
+
 body {
   font-size: 16px;
   font-family: Josefin Sans, sans-serif;
@@ -21,6 +25,16 @@ h3 {
   margin: 0;
 }
 
+button {
+  border: none;
+}
+
+input,
+textarea {
+  border: 1px solid #1d3223;
+  border-radius: 8px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -37,6 +51,10 @@ h3 {
   background: #1d3223;
   padding: 5px 0px;
   z-index: 99;
+}
+
+.topbar nav .active {
+  color: #ffff;
 }
 
 .topbar nav a {
@@ -162,7 +180,7 @@ h3 {
 }
 
 .review {
-  margin: 0 290px;
+  margin: 0 120px;
   background-color: rgb(96, 108, 56, 26%);
   color: #000;
   padding: 15px 10px;
@@ -197,11 +215,6 @@ h3 {
   margin-bottom: 90px;
 }
 
-/*.img-restaurant {
-   position: relative;
-  margin: 30px 93px; 
-}*/
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -227,36 +240,6 @@ h3 {
 .img-res {
   width: 100%;
 }
-
-/* .savane-title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-} */
-
-/* .marais-title {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-}
-
-.img-train,
-.img-marais {
-  position: relative;
-  width: 582px;
-  height: 250px;
-  text-align: center;
-}
-
-.marais-title {
-  position: absolute;
-  left: 60%;
-  top: 110%;
-} */
 
 .container a {
   text-decoration: none;
@@ -289,24 +272,6 @@ h3 {
   width: 100%;
 }
 
-/* .explanation img {
-  float: left;
-}
-
-.explanation p,
-h2 {
-  float: right;
-}
-
-.explanation {
-  display: flex;
-  gap: 50px;
-  margin-block: 60px;
-  color: #000;
-  text-align: center;
-  align-items: center;
-} */
-
 .text-lions {
   margin: 10px;
   color: #000;
@@ -316,7 +281,6 @@ h2 {
 
 .animals {
   margin: 10px;
-  /* width: 240px; */
   text-align: center;
   color: #000;
 }
@@ -331,18 +295,11 @@ h2 {
   width: 100%;
 }
 
-/* animals {
-  display: block;
-  flex-direction: column;
-  align-items: start;
-} */
-
 .container-desc-animal {
-  /* margin: 100px 200px; */
   display: flex;
   align-items: center;
   color: #000;
-  margin-top: 50px;
+  margin-top: 45px;
   padding: 10px;
 }
 
@@ -386,6 +343,10 @@ textarea {
   height: 100px;
 }
 
+.container-connexion {
+  padding-top: 150px;
+}
+
 .connexion h1 {
   text-align: center;
   padding: 50px 80px;
@@ -393,29 +354,27 @@ textarea {
 }
 
 .connexion {
-  /* margin: 100px; */
-
   width: 500px;
-  margin: 150px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding: 0 30px 30px 30px;
   background-color: #fff;
   color: #000;
-  /* display: block; */
 }
-
-/* .formulaire {
-  padding-bottom: 130px;
-  padding-left: 50px;
-} */
 
 .password {
   padding-top: 50px;
 }
 
-input {
-  border-radius: 0.2rem;
-  width: 200px;
-  border-color: rgba(0, 0, 0, 0.505);
+.button-co {
+  color: #ffff;
+  text-decoration: none;
+  background-color: #828282;
+  display: inline-block;
+  border-radius: 2rem;
+  margin: 0;
+  padding: 3px;
+  margin-top: 8%;
+  margin-left: 40%;
 }
 
 @media screen and (max-width: 950px) {
@@ -497,5 +456,15 @@ input {
   }
   .media {
     width: 11%;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  .connexion {
+    width: auto;
+  }
+
+  .contact textarea {
+    width: 80%;
   }
 }
