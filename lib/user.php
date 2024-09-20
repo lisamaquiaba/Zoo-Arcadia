@@ -14,7 +14,6 @@ function verifyUserLoginPassword(PDO $pdo, string $username, string $password):b
         // verif ok
         return $user;
     } else {
-        // username ou mdp incorrect: on retourne false
         return false;
     }
 

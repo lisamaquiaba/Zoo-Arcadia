@@ -25,11 +25,10 @@ if(isset($_POST['addAnimal'])) {
     $grammage = $_POST['grammage'] ?? ''; 
     $habitatId = intval($_POST['habitat']); 
 
-    if(!empty($prenom) && !empty($etat) && $imgContent !== null) {
+    if(!empty($prenom) && !empty($etat) && !empty($description) && !empty($race) && !empty($grammage) && !empty($nourriture) && $imgContent !== null) {
         $message = addAnimal($pdo, $prenom, $etat, $description, $race, $grammage, $nourriture, $habitatId, $imgContent);
-        echo $message;
     } else {
-        echo "Veuillez remplir tous les champs, y compris la photo.";
+        $message = "Veuillez remplir tous les champs, y compris la photo.";
     }
 }
 ?>
@@ -39,33 +38,33 @@ if(isset($_POST['addAnimal'])) {
 </div>
 
 <form method='POST' enctype="multipart/form-data">
-    <section class="contact">
-    <div>
-        <label for="">Prénom</label>
+<div class="wrapper-form">
+<div class="text-field">
+<label for="">Prénom</label>
         <input type="text" name='prenom' id='prenom'>
     </div>
-    <div>
-        <label for="">Etat</label>
+    <div class="text-field">
+    <label for="">Etat</label>
         <input type="text" name='etat' id='etat'>
     </div>
-    <div>
-        <label for="">Description</label>
+    <div class="text-field">
+    <label for="">Description</label>
         <input type="text" name='description' id='description'>
     </div>
-    <div>
-        <label for="">Race</label>
+    <div class="text-field">
+    <label for="">Race</label>
         <input type="text" name='race' id='race'>
     </div>
-    <div>
-        <label for="">Nourriture</label>
+    <div class="text-field">
+    <label for="">Nourriture</label>
         <input type="text" name='nourriture' id='nourriture'>
     </div>
-    <div>
-        <label for="">Grammage</label>
+    <div class="text-field">
+    <label for="">Grammage</label>
         <input type="text" name='grammage' id='grammage'>
     </div>
-    <div>
-        <label for="picture">Photo : </label>
+    <div class="text-field">
+    <label for="picture">Photo : </label>
         <input type="file" name="image" accept="image/*">
     </div>
     <select name="habitat" id="habitat-select">
@@ -74,8 +73,11 @@ if(isset($_POST['addAnimal'])) {
             <option value="<?=$habitats['habitat_id'] ?>"><?= htmlspecialchars($habitats['nom']); ?></option>
         <?php endforeach; ?>
     </select>    
-    </section>
-    <button type='submit' name='addAnimal'>Ajouter un animal</button>
+    <button class='button-sub' type='submit' name='addAnimal'>Ajouter un animal</button>
+    <?php if (isset($message)): ?>
+    <p style="color: red"><?= htmlspecialchars($message); ?></p>
+    <?php endif; ?>
+        </div>
 </form>
 
 <?php require_once __DIR__. "/templates/footer.php" ?>

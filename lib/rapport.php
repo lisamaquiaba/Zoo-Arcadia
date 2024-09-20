@@ -9,7 +9,7 @@ function getLastRapportById(PDO $pdo, int $id) {
 
 function getAllRapport(PDO $pdo, int $id) {
     $query = $pdo->prepare('SELECT * FROM rapport_veterinaire WHERE id_animal = :id');
-    $query->bindParam(':id', $animal['animal_id'], PDO::PARAM_INT);
+    $query->bindParam(':id', $id, PDO::PARAM_INT);
     $query->execute();
     return $query->fetchAll(PDO::FETCH_ASSOC);
 }

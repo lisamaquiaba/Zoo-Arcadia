@@ -51,7 +51,9 @@
                     <a class="profile" href="addHabitat.php">Ajouter un habitat</a>
                     <a class="profile" href="servicesAdmin.php">Ajouter/Modifier un service</a>
                     <a class="profile" href="addUser.php">Créer un compte</a>
+                    <a class="profile" href="listAnimal.php">Les animaux</a>
                     <a class="profile" href="horaire.php">Horaires</a>
+
                 <?php endif; ?>
 
                 <?php if ($isVet): ?>

@@ -33,26 +33,36 @@
       $report = $_POST['report'] ?? ''; 
      
      $message = addRapport($pdo, $report, $id);
-    
+     
+     header('Location: ' . $_SERVER['PHP_SELF'] . '?id=' . $id);
+     exit;
+
     }
 
 ?>
     <section>
     <div class="bar">
-    <h2>Compte rendu <?= htmlspecialchars($animal['prenom']); ?> </h2>
+    <h2>Rapport de <?= htmlspecialchars($animal['prenom']); ?> </h2>
     </div>
-
+    <div class='wrapper-rapport'>
+      <h2>Historique</h2>
     <?php foreach ($rapportVet as $rapport): ?>
          <div>
-              <h2><?= htmlspecialchars($rapport['detail']); ?></h2>
-              <p><?= htmlspecialchars($rapport['date']); ?></p>
+           <span><?= htmlspecialchars($rapport['date']); ?> : </span>
+              <span><?= htmlspecialchars($rapport['detail']); ?></span>
          </div>
        <?php endforeach; ?>
+       </div>
        <div>
         <form method='POST'>
-          <label for="">Rapport vétérinaire</label>
-          <textarea name="report"></textarea>
-          <button type='submit' name='addReport'>Envoyer rapport</button>
+        <div class="wrapper-form">
+
+        <div class="text-field">
+            <label for="">Rapport : </label>
+            <textarea name="report"></textarea>
+          </div>
+          <button class='button-sub' type='submit' name='addReport'>Envoyer rapport</button>
+        </div>
         </form>
         </div>
 

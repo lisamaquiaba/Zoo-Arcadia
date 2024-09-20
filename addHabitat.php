@@ -41,20 +41,26 @@
 
 <main>
   <div class="bar">
-    <h1>MODIFICATION habitats</h1>
+    <h1>Modification Habitats</h1>
   </div>
-<section class="contact">
+<section>
   <form method="POST" enctype="multipart/form-data"> 
+  <div class="wrapper-form">
     <?php foreach ($listHabitats as $habitats): ?>
-      <div>
+      <div class="wrapper-field">
+      <div class="text-field">
         <label for="nom_<?= $habitats['habitat_id']; ?>">Nom :</label>
         <input type="text" id="nom_<?= $habitats['habitat_id']; ?>" name="habitat[<?= $habitats['habitat_id']; ?>][nom]" value="<?= htmlspecialchars($habitats['nom']); ?>" />
+    </div>
 
+    <div class="text-field">
         <label for="description_<?= $habitats['habitat_id']; ?>">Description :</label>
         <textarea id="description_<?= $habitats['habitat_id']; ?>" name="habitat[<?= $habitats['habitat_id']; ?>][description]"><?= htmlspecialchars($habitats['description']); ?></textarea>
-
+        </div>
+    <div class="text-field">
           <label for="nom_<?= $habitats['habitat_id']; ?>">Commentaire :</label>
         <input type="text" id="commentaire_habitat<?= $habitats['habitat_id']; ?>" name="habitat[<?= $habitats['habitat_id']; ?>][commentaire_habitat]" value="<?= htmlspecialchars($habitats['commentaire_habitat']); ?>" />
+        </div>
 
 
         <label for="image_<?= $habitats['habitat_id']; ?>">Image</label>
@@ -62,7 +68,8 @@
       </div>
     <?php endforeach; ?>
     
-    <button type="submit" name='update'>Mettre à jour</button>
+    <button class='button-sub' type="submit" name='update'>Mettre à jour</button>
+    </div>
   </form>
   </section>
 </main>

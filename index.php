@@ -38,9 +38,7 @@
           />
         </div>
         <div class="wrapper-description">
-          <a class="title-accueil" href="animals.html">
-            <h2>Nos Animaux</h2>
-          </a>
+            <h2 class="title-accueil">Nos Animaux</h2>
           <p>
             Au sein du zoo Arcadia, vous pourrez découvrir une grande variété
             d’animaux tous aussi incroyable les uns que les autres: parmi eux,
@@ -51,9 +49,7 @@
       </div>
       <div class="accueil-animals-reverse">
         <div class="wrapper-description">
-          <a class="title-accueil" href="habitats.html">
-            <h2>Les habitats</h2>
-          </a>
+            <h2 class="title-accueil">Les habitats</h2>
           <p>
             Pour que nos animaux puissent vivre dans de bonnes conditions, nous
             avons, avec soin, recréer leurs habitats naturel. En passant par la
@@ -79,9 +75,7 @@
           />
         </div>
         <div class="wrapper-description">
-          <a class="title-accueil" href="services.html">
-            <h2>Nos Services</h2>
-          </a>
+            <h2 class="title-accueil">Nos Services</h2>
           <p class="text-section">
             Au zoo Arcadia, nous nous soucions de nos visiteurs autant que de
             nos animaux. c’est pour cela que plusieurs services sont mis a votre

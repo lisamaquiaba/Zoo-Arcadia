@@ -1,5 +1,5 @@
 
-<?php  
+ <?php  
     require_once __DIR__. "/templates/header.php";
     require_once __DIR__ . "/lib/pdo.php";
     require_once __DIR__ . "/lib/animal.php";
@@ -17,23 +17,25 @@
 
     $listAnimals = getAnimals($pdo);
     
-    ?>
+    ?> 
 
     <div class="bar">
       <h1>Les Animaux</h1>
     </div>
+    <div class='wrapper-report'>
+      <?php foreach ($listAnimals as $animal): ?>
+        <div class='report'>
+          <a
+          href="animal.php?id=<?=$animal['animal_id'] ?>"
+          class="btn btn-primary"
+          ><?= htmlspecialchars($animal['prenom']); ?>
+        </a>
+        <a href="report.php?id=<?=$animal['animal_id'] ?>"
+        >Compte Rendu</a>
+      </div>
 
-    <?php foreach ($listAnimals as $animal): ?>
-    <div>
-      <a
-      href="animal.php?id=<?=$animal['animal_id'] ?>"
-      class="btn btn-primary"
-      ><p><?= htmlspecialchars($animal['prenom']); ?></p>
-    </a>
-    <a href="report.php?id=<?=$animal['animal_id'] ?>"
-    >Compte Rendu</a>
-    <?php endforeach; ?>
-</div>
-    <?php require_once __DIR__. "/templates/footer.php" ?>
-  </body>
-</html>
+        <?php endforeach; ?> 
+      </div>
+
+     <?php require_once __DIR__. "/templates/footer.php" ?> 
+

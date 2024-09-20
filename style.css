@@ -2,8 +2,8 @@ html {
   background-color: #c89e61;
 }
 
-.test {
-  color: black;
+a {
+  text-decoration: none;
 }
 
 body {
@@ -409,6 +409,16 @@ textarea {
   margin-left: 40%;
 }
 
+.button-sub {
+  color: #ffff;
+  text-decoration: none;
+  background-color: #828282;
+  border-radius: 2rem;
+  margin: 0;
+  max-width: 150px;
+  padding: 10px 10px;
+}
+
 .profile {
   font-size: 20px;
   color: #000;
@@ -416,6 +426,46 @@ textarea {
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
+}
+
+.wrapper-report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrapper-report a {
+  color: #000;
+}
+
+.text-field {
+  display: flex;
+  gap: 20px;
+}
+.wrapper-form {
+  width: 400px;
+  margin: 0 auto;
+  color: #000;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.wrapper-field {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+
+.wrapper-rapport {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #000;
+  margin-bottom: 20px;
+  gap: 10px;
 }
 
 @media screen and (max-width: 950px) {

@@ -6,13 +6,13 @@
       </div>
       <div class="social-media">
         <p>Retrouvez-nous sur :</p>
-        <a href="index.html"
+        <a href="index.php"
           ><img class="media" src="img/facebook.png" alt="Logo Facebook"
         /></a>
-        <a href="index.html"
+        <a href="index.php"
           ><img class="media" src="img/instagram.png" alt="Logo Instagram"
         /></a>
-        <a href="index.html"
+        <a href="index.php"
           ><img class="media" src="img/youtube.png" alt="Logo Youtube"
         /></a>
       </div>
