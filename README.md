@@ -1,8 +1,6 @@
 # Zoo Arcardia
 
-Arcadia est un zoo situé en Bretagne, près de la forêt de Brocéliande, ouvert depuis 1960. Le parc propose une grande variété d’animaux, organisés par habitats tels que la savane, la jungle et les marais, et porte une attention particulière à leur bien-être. Chaque jour, des vétérinaires effectuent des contrôles de santé avant l’ouverture et veillent à ce que l’alimentation soit adaptée.
-
-Le zoo est prospère et les animaux y sont bien soignés, ce qui fait la fierté de José, le directeur. Bien qu’il ne soit pas familier avec l’informatique, José souhaite créer une application web pour permettre aux visiteurs de découvrir les animaux, leur état de santé, ainsi que les services et horaires du zoo. Après votre diplôme, vous avez rejoint DevSoft, l’entreprise choisie pour réaliser ce projet et contribuer à la notoriété du zoo.
+Le zoo Arcadia est un zoo situé en France près de la forêt Bordéliane en Bretagne. Il propose une grande variété d'animaux, répartie dans différents habitats. Le zoo prend extrêmement soin de ces animaux et fait vraiment attention à leur santé. Cette application a été créée dans le but de permettre aux utilisateurs de visualiser les différents animaux, leurs états, les services ainsi que les horaires d'ouverture et de fermeture du zoo. Elle permet de faciliter les comptes rendus des vétérinaires qui, chaque jours effectuent des contrôles de santé avant l’ouverture et veillent à ce que l’alimentation soit adaptée.
 
 
 
