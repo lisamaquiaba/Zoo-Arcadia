@@ -2,6 +2,10 @@ html {
   background-color: #c89e61;
 }
 
+.test {
+  color: black;
+}
+
 body {
   font-size: 16px;
   font-family: Josefin Sans, sans-serif;
@@ -27,6 +31,13 @@ h3 {
 
 button {
   border: none;
+}
+
+hr {
+  border: none;
+  height: 0.5px;
+  background-color: #34593f;
+  margin: 20px 0;
 }
 
 input,
@@ -62,7 +73,8 @@ textarea {
   color: rgb(255, 255, 255, 70%);
 }
 
-.nav-toggle {
+.nav-toggle,
+.nav-mobile {
   display: none;
 }
 
@@ -83,6 +95,16 @@ textarea {
   border-radius: 2rem;
   margin: 0;
   padding: 3px;
+}
+
+.submit {
+  background-color: #1d3223;
+  display: inline-block;
+  border-radius: 1rem;
+  margin: 2% 14%;
+  padding: 9px;
+  color: white;
+  font-size: 15px;
 }
 
 .topbar nav a:hover {
@@ -185,6 +207,10 @@ textarea {
   color: #000;
   padding: 15px 10px;
   margin-top: 20px;
+}
+
+.name {
+  font-size: 17px;
 }
 
 .footer {
@@ -329,6 +355,12 @@ textarea {
   padding-left: 80px;
 }
 
+.add {
+  color: #000;
+  text-align: center;
+  padding-bottom: 4%;
+}
+
 .contact {
   color: #000;
   margin-left: 70px;
@@ -377,6 +409,15 @@ textarea {
   margin-left: 40%;
 }
 
+.profile {
+  font-size: 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
 @media screen and (max-width: 950px) {
   .container {
     flex-direction: column;
@@ -407,8 +448,27 @@ textarea {
 }
 
 @media screen and (max-width: 800px) {
-  .nav-toggle {
+  .nav-toggle,
+  .nav-mobile {
     display: block;
+    cursor: pointer;
+  }
+
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    background: #1d3223;
+    position: absolute;
+    align-items: center;
+    top: -500px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px;
+    gap: 20px;
+  }
+  .toggle-menu {
+    top: 45px;
   }
   .wrapper-link {
     display: none;
