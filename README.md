@@ -51,8 +51,13 @@ Installer projet zoo Arcardia
 
 **HTML**, **CSS**, **Javascript**, **PHP**, **Mysql**
 
+## Informations Complémentaires
+Je tiens à vous informer que, malgré mes efforts soutenus, je n’ai pas pu finaliser l’intégralité du projet dans le temps imparti. Le cumul des cours et des travaux pratiques a représenté un défi considérable en termes de gestion du temps. Malgré  ça, cela m’a permis d’apprendre davantage sur les différents langages.
+
+
 ## Figma
 [Figma](https://www.figma.com/design/bb514bURMqQBPCgJXxginv/Zoo-Arcadia?t=LTZrTsjHbnATFFbl-1)
+
 ## Authors
 
 - [@Lisa Maquiaba](https://github.com/lisamaquiaba)
